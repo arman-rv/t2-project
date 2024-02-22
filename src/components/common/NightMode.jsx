@@ -3,7 +3,7 @@ import headerScroll from "../../core/utils/headerScroll.utils"
 import darkMode from "../../core/utils/darkMode.utils"
 import { setttttttt } from "../landing/TitleComponents"
 import { useLocation } from "react-router-dom"
-import { sFillPath } from "../landing/footerSvg"
+import { sFillPath } from "../landing/FooterSvg"
 import { reRend } from "../map/SocialMediaMap"
 
 const NightMode = ({bgClass}) => {
