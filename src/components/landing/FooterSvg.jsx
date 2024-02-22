@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
 
-export let sFillPath;
+// export let sFillPath;
 const FooterSvg = () => {
   const [fillPath, setFillPath] = useState("")
   let theme = localStorage.getItem("theme")
   useEffect(() => {
     if(theme == "light") setFillPath("#f5f5f5")
     else setFillPath("#0f172a")
-    sFillPath = setFillPath
+    // sFillPath = setFillPath
   }, [])
   
   return (

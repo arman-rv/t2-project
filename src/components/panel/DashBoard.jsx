@@ -40,7 +40,8 @@ const DashBoard = () => {
             <div className='w-[90%] h-[240px] bg-white mx-auto rounded-2xl relative'>
               <h1 className='absolute right-4 top-4 text-[20px]'>مشخصات فردی</h1>
               <div className="w-[100px] h-[100px] absolute right-10 bottom-20 text-[#a472a4]">
-                <CircularProgressbar value={myInfo?.profileCompletionPercentage} text={`${myInfo?.profileCompletionPercentage}%`} />
+                <CircularProgressbar value={myInfo?.profileCompletionPercentage } 
+                text={myInfo?.profileCompletionPercentage ?`${myInfo?.profileCompletionPercentage}%` : "کاربر"} />
                 <span className="absolute bottom-[-40px]">تکمیل پروفایل</span>
               </div>
               <div className="w-[75%] h-full pt-3 flex flex-col flex-wrap px-2 [&>div]:flex [&>div]:flex-col [&>div>span:first-child]:mb-1 [&>div]:my-2 " dir="rtl">
