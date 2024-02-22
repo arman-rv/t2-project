@@ -2,7 +2,7 @@ import { useRef } from "react";
 import FooterList from './footer/FooterList'
 import FooterTop from "./footer/FooterTop";
 import SocialMediaMap from "../map/SocialMediaMap";
-import FooterSvg from "../landing/footerSvg";
+import FooterSvg from "../landing/FooterSvg";
 
 const Footer = () => {
   let btn = useRef()
