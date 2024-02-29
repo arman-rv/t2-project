@@ -1,10 +1,10 @@
-const FooterTop = ({ content , src , className }) => {
+const FooterTop = ({ content, src, className }) => {
   return (
     <div className={className}>
-        <img src={"../src/assets/images/footer/" + src + ".png"} alt="" />
-        <p>{content}</p>
+      <img src={"/images/footer/" + src + ".png"} alt="" />
+      <p>{content}</p>
     </div>
-  )
-}
+  );
+};
 
-export default FooterTop
+export default FooterTop;
