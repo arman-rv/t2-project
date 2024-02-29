@@ -49,15 +49,15 @@ const Recommands = () => {
           >
             <FieldInput
               name="name"
-              content="نام کاربری"
-              placeholder="user name"
+              content="نام"
+              placeholder="twinturbo"
               border="border"
             />
 
             <FieldInput
               name="email"
               content="ایمیل"
-              placeholder="enter your email address"
+              placeholder="ساری،جاده دریا"
               border="border"
             />
 

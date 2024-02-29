@@ -38,14 +38,14 @@ const ContactUs = () => {
                             <li className="flex items-center ">
                                 <div className="flex flex-col items-end">
                                     <div className="text-[24px] text-[#666] dark:text-[#f5f5f5]">تماس بگیرید</div>
-                                    <div className="text-[18px] text-[#aaa] dark:text-[#ccc]">09336669933</div>
+                                    <div className="text-[18px] text-[#aaa] dark:text-[#ccc]">094541321456</div>
                                 </div>
                                 <img src="../src/assets/images/contactUs/call.png" alt="" className="ml-5" />
                             </li>
                             <li className="flex items-center">
                                 <div className="flex flex-col items-end">
                                     <div className="text-[24px] text-[#666] dark:text-[#f5f5f5]">مکاتبه ایمیلی</div>
-                                    <div className="text-[18px] text-[#aaa] dark:text-[#ccc]" dir="rtl">asgharpalang@gmail.com از طریق ایمیل</div>
+                                    <div className="text-[18px] text-[#aaa] dark:text-[#ccc]" dir="rtl">example@gmail.com از طریق ایمیل</div>
                                 </div>
                                 <img src="../src/assets/images/contactUs/message.png" alt="" className="ml-5" />
                             </li>

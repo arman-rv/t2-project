@@ -1,6 +1,9 @@
+import { useEffect, useState } from 'react';
+
 import customAxios from '../../core/services/interceptor';
 import ItemLandingNews from '../landing/news/ItemLandingNews'
-import { useEffect, useState } from 'react';
+
+import {blogs} from "../../static-data/blogs"
 
 const ItemNewsMap = ({newValue}) => {
   
@@ -24,7 +27,7 @@ const ItemNewsMap = ({newValue}) => {
   return (
     <>
       {
-        blogsItem.map((element,index) => {
+        blogs.slice(15,18).map((element,index) => {
             return <ItemLandingNews key={index} element={element} />
         })
       }

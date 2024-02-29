@@ -16,18 +16,18 @@ const HeroSection = () => {
       id="heroSection"
     >
       <img
-        src={"/bgtop.png"}
+        src="/bgtop.png"
         alt="BGTOPImg"
         className="max-[1020px]:hidden w-full h-full absolute left-0 -top-[2px] scale-x-[107%] scale-y-[117%] -z-10 max-[1140px]:scale-x-[115%] max-[1122px]:scale-x-[120%]"
       />
       <img
-        style={{ backgroundImage: "url(/woman.png)" }}
+        src="/woman.png"
         alt="woman"
         className="absolute scale-[72%] left-[-10px] top-[80px] z-10 max-[1500px]:scale-[60%] max-[1500px]:left-[-100px] max-[1020px]:hidden max-[1350px]:scale-[50%] max-[1350px]:left-[-200px]"
         id="heroSectionWoman"
       />
       <img
-        src={"/bgtop.png"}
+        src="/bgtop.png"
         alt="BGTOPImg"
         className="scale-[130%] object-cover absolute top-0 left-0 w-full h-[90%] max-[1020px]:block hidden -z-[15]"
       />

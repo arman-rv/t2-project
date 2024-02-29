@@ -4,6 +4,8 @@ import TitleComponents from "./TitleComponents";
 import landingCourseSelector from "../../core/utils/landingCourseSelector.utils";
 import customAxios from "../../core/services/interceptor/index";
 
+import { courses } from "../../static-data/courses";
+
 export let setCurItem;
 const Courses = () => {
   let bigPic = useRef();
@@ -14,7 +16,7 @@ const Courses = () => {
 
   const [courseId, setCourseId] = useState();
   const [currentItem, setCurrentItem] = useState();
-  const [item, setItem] = useState([]);
+  const [item, setItem] = useState(courses);
   setTimeout(() => {
     setCourseId(landingCourse.current.getAttribute("data-id"));
   }, 10);
@@ -51,17 +53,11 @@ const Courses = () => {
             className="absolute left-[-160%] bottom-0 z-10 transition-all duration-1000 h-[250px] max-[1020px]:hidden"
             id="coursesHolder1"
           />
-          {item?.map((el, index) => {
+          {item?.slice(0, 3).map((el, index) => {
             return (
               <img
                 key={index}
-                src={
-                  el?.tumbImageAddress !== null
-                    ? el?.tumbImageAddress.indexOf("https://") !== -1
-                      ? el?.tumbImageAddress
-                      : "/images/courses/03.png"
-                    : "/images/courses/03.png"
-                }
+                src={el?.tumbImageAddress}
                 alt=""
                 className="w-[85%] h-[150px] cursor-pointer rounded-[20px] max-[1020px]:w-[180px] max-[620px]:w-[150px] max-[510px]:w-[130px] max-[450px]:w-[120px] max-[1020px]:h-[110px] max-[450px]:h-[80px] max-[400px]:w-[100px] "
                 data-id={index++}
@@ -91,13 +87,7 @@ const Courses = () => {
             id="coursesHolder2"
           />
           <img
-            src={
-              currentItem?.tumbImageAddress !== null
-                ? currentItem?.tumbImageAddress.indexOf("https://") !== -1
-                  ? currentItem?.tumbImageAddress
-                  : "/images/courses/03.png"
-                : "/images/courses/03.png"
-            }
+            src={item?.[0].tumbImageAddress}
             alt=""
             className="max-[560px]:w-[90%] max-[450px]:w-full max-[1020px]:scale-[80%] max-[963px]:w-[70%] max-[963px]:h-[230px] w-[90%] h-[280px] mx-auto rounded-[15px]"
             ref={bigPic}
@@ -109,18 +99,17 @@ const Courses = () => {
                   className="text-[18px] max-[1020px]:text-[16px] max-[450px]:text-[15px] max-[400px]:mb-[-11px] dark:text-[#f5f5f5] relative max-[650px]:left-[-15px]"
                   ref={master}
                 >
-                  {currentItem?.teacherName.length < 13
-                    ? currentItem?.teacherName
-                    : currentItem?.teacherName.slice(0, 13)}
+                  {item?.[0].teacherName.length < 13
+                    ? item?.[0].teacherName
+                    : item?.[0].teacherName.slice(0, 13)}
                 </div>
-                <span className="ml-1"> : مدرس</span>
+                <span className="ml-1 dark:text-[#fff]"> : مدرس</span>
               </div>
               <div
                 className="text-[24px] max-[500px]:text-[20px] max-[450px]:text-[18px] dark:text-[#fff] max-[1020px]:text-[18px]"
                 ref={title}
               >
-                {" "}
-                دوره کامل : {currentItem?.title}
+                دوره کامل : {item?.[0].title}
               </div>
             </div>
             <div
@@ -128,7 +117,10 @@ const Courses = () => {
               dir="rtl"
               ref={content}
             >
-              {currentItem?.describe}
+              الان و امروز کمتر کسی هست که از بازار کار داغ نود جی اس با خبر
+              نباشه و یکی از دلایل استفاده از این تکنولوژی فارغ از یه خیلی از
+              مزایاش برای برنامه نویسا(کسب و کار ها به کنار) همین بازار کارشه و
+              ما توی این دوره از نقطه منفی
             </div>
           </div>
           <Button
