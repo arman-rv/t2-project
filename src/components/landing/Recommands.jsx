@@ -57,7 +57,7 @@ const Recommands = () => {
             <FieldInput
               name="email"
               content="ایمیل"
-              placeholder="ساری،جاده دریا"
+              placeholder="example@gmail.com"
               border="border"
             />
 
