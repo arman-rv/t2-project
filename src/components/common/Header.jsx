@@ -412,7 +412,7 @@ const Header = ({
             src="/images/menu.png"
             alt=""
             id="menuPic"
-            className="h-[30px] max-[1020px]:block m-[15px] cursor-pointer max-[500px]:scale-[83%] hidden "
+            className="h-[30px] max-[1020px]:block m-[15px] cursor-pointer max-[500px]:scale-[83%] hidden dark:invert-[100%]"
           />
           <div
             className={

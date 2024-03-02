@@ -5,7 +5,7 @@ import ItemLandingNews from '../landing/news/ItemLandingNews'
 
 import {blogs} from "../../static-data/blogs"
 
-const ItemNewsMap = ({newValue}) => {
+const ItemNewsMap = ({newValue , num1 , num2}) => {
   
   const [blogsItem, setBlogsItem] = useState([])
 
@@ -27,7 +27,7 @@ const ItemNewsMap = ({newValue}) => {
   return (
     <>
       {
-        blogs.slice(15,18).map((element,index) => {
+        blogs.slice(num1,num2).map((element,index) => {
             return <ItemLandingNews key={index} element={element} />
         })
       }

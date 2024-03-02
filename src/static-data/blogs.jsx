@@ -37,8 +37,7 @@ export const blogs = [
     isBlog: false,
     currentView: 20,
     currentLikeCount: 32,
-    newsCatregoryName:"مقالات"
-
+    newsCatregoryName: "مقالات",
   },
   {
     id: 1,
@@ -66,8 +65,7 @@ export const blogs = [
     isBlog: false,
     currentView: 20,
     currentLikeCount: 32,
-    newsCatregoryName:"خبر"
-
+    newsCatregoryName: "خبر",
   },
   {
     id: 2,
@@ -95,7 +93,7 @@ export const blogs = [
     isBlog: false,
     currentView: 20,
     currentLikeCount: 32,
-    newsCatregoryName:"خبر"
+    newsCatregoryName: "خبر",
   },
   {
     id: 3,
@@ -121,8 +119,7 @@ export const blogs = [
     isBlog: false,
     currentView: 20,
     currentLikeCount: 32,
-    newsCatregoryName:"مقالات"
-
+    newsCatregoryName: "مقالات",
   },
   {
     id: 4,
@@ -144,8 +141,7 @@ export const blogs = [
     isBlog: false,
     currentView: 20,
     currentLikeCount: 32,
-    newsCatregoryName:"خبر"
-
+    newsCatregoryName: "خبر",
   },
   {
     id: 5,
@@ -167,8 +163,7 @@ export const blogs = [
     isBlog: false,
     currentView: 20,
     currentLikeCount: 32,
-    newsCatregoryName:"مقالات"
-
+    newsCatregoryName: "مقالات",
   },
   {
     id: 6,
@@ -191,8 +186,7 @@ export const blogs = [
     isBlog: false,
     currentView: 20,
     currentLikeCount: 32,
-    newsCatregoryName:"خبر"
-
+    newsCatregoryName: "خبر",
   },
   {
     id: 7,
@@ -213,8 +207,7 @@ export const blogs = [
     isBlog: false,
     currentView: 20,
     currentLikeCount: 32,
-    newsCatregoryName:"مقالات"
-
+    newsCatregoryName: "مقالات",
   },
   {
     id: 8,
@@ -235,8 +228,7 @@ export const blogs = [
     isBlog: false,
     currentView: 20,
     currentLikeCount: 32,
-    newsCatregoryName:"خبر"
-
+    newsCatregoryName: "خبر",
   },
   {
     id: 9,
@@ -257,8 +249,7 @@ export const blogs = [
     isBlog: false,
     currentView: 20,
     currentLikeCount: 32,
-    newsCatregoryName:"مقالات"
-
+    newsCatregoryName: "مقالات",
   },
   {
     id: 10,
@@ -281,8 +272,7 @@ export const blogs = [
     isBlog: false,
     currentView: 20,
     currentLikeCount: 32,
-    newsCatregoryName:"خبر"
-
+    newsCatregoryName: "خبر",
   },
   {
     id: 11,
@@ -303,8 +293,7 @@ export const blogs = [
     isBlog: false,
     currentView: 20,
     currentLikeCount: 32,
-    newsCatregoryName:"خبر"
-
+    newsCatregoryName: "خبر",
   },
   {
     id: 12,
@@ -326,8 +315,7 @@ export const blogs = [
     isBlog: false,
     currentView: 20,
     currentLikeCount: 32,
-    newsCatregoryName:"مقالات"
-
+    newsCatregoryName: "مقالات",
   },
   {
     id: 13,
@@ -349,33 +337,10 @@ export const blogs = [
     isBlog: false,
     currentView: 20,
     currentLikeCount: 32,
-    newsCatregoryName:"خبر"
-
+    newsCatregoryName: "خبر",
   },
   {
     id: 14,
-    updateDate: "2024-01-11T05:34:42.901Z",
-    currentImageAddressTumb: php,
-    likeCount: 12,
-    title: "پروژه های کاربردی PHP",
-    currentRegistrants: 44,
-    statusName: "درحال ثبت نام",
-    addUserFullName: "آرمان رضوانی",
-    levelName: "پیشرفته",
-    cost: 666_000,
-    courseRate: 5,
-    currentRate: 4,
-    technologyList: "BackEnd",
-
-    description: `مینی پروژه‌های کاربری با PHP" یه دوره آموزشی گام به گام هست که برای توسعه‌دهندگان وب، به ویژه کسایی که میخوان مهارت‌های برنامه‌نویسی PHP خودشونو تقویت کنن و تجربه‌های عملی کسب کنن، مناسبه`,
-    isBlog: false,
-    currentView: 20,
-    currentLikeCount: 32,
-    newsCatregoryName:"مقالات"
-
-  },
-  {
-    id: 15,
     updateDate: "2023-11-11T05:34:42.901Z",
     currentImageAddressTumb: reactJs,
     likeCount: 255,
@@ -394,8 +359,28 @@ export const blogs = [
     isBlog: false,
     currentView: 20,
     currentLikeCount: 32,
-    newsCatregoryName:"مقالات"
+    newsCatregoryName: "مقالات",
+  },
+  {
+    id: 15,
+    updateDate: "2024-01-11T05:34:42.901Z",
+    currentImageAddressTumb: php,
+    likeCount: 12,
+    title: "پروژه های کاربردی PHP",
+    currentRegistrants: 44,
+    statusName: "درحال ثبت نام",
+    addUserFullName: "آرمان رضوانی",
+    levelName: "پیشرفته",
+    cost: 666_000,
+    courseRate: 5,
+    currentRate: 4,
+    technologyList: "BackEnd",
 
+    description: `مینی پروژه‌های کاربری با PHP" یه دوره آموزشی گام به گام هست که برای توسعه‌دهندگان وب، به ویژه کسایی که میخوان مهارت‌های برنامه‌نویسی PHP خودشونو تقویت کنن و تجربه‌های عملی کسب کنن، مناسبه`,
+    isBlog: false,
+    currentView: 20,
+    currentLikeCount: 32,
+    newsCatregoryName: "مقالات",
   },
   {
     id: 16,
@@ -420,8 +405,7 @@ export const blogs = [
     isBlog: false,
     currentView: 20,
     currentLikeCount: 32,
-    newsCatregoryName:"خبر"
-
+    newsCatregoryName: "خبر",
   },
 
   {
@@ -443,7 +427,6 @@ export const blogs = [
     isBlog: false,
     currentView: 20,
     currentLikeCount: 32,
-    newsCatregoryName:"مقالات"
-
+    newsCatregoryName: "مقالات",
   },
 ];

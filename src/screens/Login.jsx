@@ -71,7 +71,7 @@ const login = () => {
                 display="hidden"
                 className="placeholder:text-[#b9b7b7]"
                 dir="rtl"
-                showPasswordCheck={true}
+                // showPasswordCheck={true}
               />
 
               <div className="flex items-center self-end mr-10">

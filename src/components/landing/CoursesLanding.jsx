@@ -103,17 +103,17 @@ const Courses = () => {
                     ? item?.[0].teacherName
                     : item?.[0].teacherName.slice(0, 13)}
                 </div>
-                <span className="ml-1 dark:text-[#fff]"> : مدرس</span>
+                <span className="ml-1 dark:text-[#fff]"> </span>
               </div>
               <div
                 className="text-[24px] max-[500px]:text-[20px] max-[450px]:text-[18px] dark:text-[#fff] max-[1020px]:text-[18px]"
                 ref={title}
               >
-                دوره کامل : {item?.[0].title}
+               {item?.[0].title}
               </div>
             </div>
             <div
-              className="mt-[30px] break-words text-[17px] text-[#777] px-[10px] dark:text-[#fff] leading-9 max-[650px]:mb-5 max-[1020px]:leading-6 max-[450px]:text-[14px] max-[1020px]:text-[15px]"
+              className="mt-[30px] break-words text-[17px] text-[#777] px-[10px] dark:text-[#fff] leading-9 max-[650px]:mb-5 max-[1020px]:leading-6 max-[450px]:text-[14px] max-[1020px]:text-[15px] max-lg:line-clamp-3 max-[650px]:pl-20"
               dir="rtl"
               ref={content}
             >
@@ -125,7 +125,7 @@ const Courses = () => {
           </div>
           <Button
             content="مشاهده دوره"
-            className="absolute left-7 bottom-4 max-[1020px]:bottom-[40px] max-[900px]:scale-[70%] max-[900px]:bottom-[20px] max-[650px]:bottom-[10px]"
+            className="absolute left-7 bottom-4 max-[1020px]:bottom-[40px] max-[900px]:scale-[70%] max-[900px]:bottom-[20px] max-[650px]:bottom-1 max-[650px]:-left-3 max-[650px]:scale-[65%]"
             link={
               "/courses/" +
               landingCourse?.current?.getAttribute("data-courseid")
