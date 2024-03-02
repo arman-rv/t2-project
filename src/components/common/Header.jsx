@@ -5,6 +5,8 @@ import customAxios from "../../core/services/interceptor";
 import ReactStars from "react-stars";
 import { useNavigate } from "react-router-dom";
 
+import menuImg from "../../assets/images/menu.png";
+
 const Header = ({
   className,
   src,
@@ -409,10 +411,10 @@ const Header = ({
             />
           </div>
           <img
-            src="/images/menu.png"
+            src={menuImg}
             alt=""
             id="menuPic"
-            className="h-[30px] max-[1020px]:block m-[15px] cursor-pointer max-[500px]:scale-[83%] hidden dark:invert-[100%]"
+            className="h-[30px] max-[1020px]:block m-[15px] cursor-pointer max-[500px]:scale-[83%] hidden dark:invert-[100%] dark:brightness-0 dark:opacity-95"
           />
           <div
             className={
