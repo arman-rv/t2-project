@@ -7,6 +7,8 @@ import { useNavigate } from "react-router-dom";
 
 import menuImg from "../../assets/images/menu.png";
 
+import headerScroll from '../../core/utils/headerScroll.utils'
+
 const Header = ({
   className,
   src,
@@ -71,22 +73,22 @@ const Header = ({
     else if (coloring == "news") getNewsAll();
   }, [inputSearch]);
 
-  // useEffect(() => {
-  //   if (token) getProfileInformation();
-  //   menuPic.onclick = () => {
-  //     menu.style.right = "0%";
-  //     menu.style.opacity = 1;
-  //   };
-  //   closePic.onclick = () => {
-  //     menu.style.right = "-100%";
-  //     menu.style.opacity = 0;
-  //   };
-  //   window.addEventListener("scroll", headerScroll);
+  useEffect(() => {
+    // if (token) getProfileInformation();
+    menuPic.onclick = () => {
+      menu.style.right = "0%";
+      menu.style.opacity = 1;
+    };
+    closePic.onclick = () => {
+      menu.style.right = "-100%";
+      menu.style.opacity = 0;
+    };
+    window.addEventListener("scroll", headerScroll);
 
-  //   return () => {
-  //     window.removeEventListener("scroll", headerScroll);
-  //   };
-  // }, []);
+    return () => {
+      window.removeEventListener("scroll", headerScroll);
+    };
+  }, []);
 
   useEffect(() => {
     setNews([]);
@@ -414,7 +416,7 @@ const Header = ({
             src={menuImg}
             alt=""
             id="menuPic"
-            className="h-[30px] max-[1020px]:block m-[15px] cursor-pointer max-[500px]:scale-[83%] hidden dark:invert-[100%] dark:brightness-0 dark:opacity-95"
+            className="h-[30px] max-[1020px]:block m-[15px] cursor-pointer max-[500px]:scale-[83%] hidden dark:invert-[100%] dark:brightness-0 dark:opacity-95 "
           />
           <div
             className={

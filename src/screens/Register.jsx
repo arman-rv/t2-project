@@ -60,7 +60,7 @@ const Register = () => {
   else if (flag == 3) submitMessage = "ثبت نام";
 
   let formClassName =
-    "w-[520px] h-[400px] bg-white absolute right-[14%] top-[405px] shadow-[0_0_7px_#ccc] rounded-[15px] flex flex-col justify-around items-center py-4 regForm max-[1256px]:mt-20 max-[1256px]:right-0 max-[1256px]:top-0 max-[1256px]:relative max-[550px]:scale-[80%] max-[430px]:scale-[70%] max-[380px]:scale-[60%]  max-[340px]:scale-[50%] ";
+    "w-[520px] h-[400px] bg-white absolute right-[14%] top-[405px] shadow-[0_0_7px_#ccc] rounded-[15px] flex flex-col justify-around items-center py-4 regForm max-[1256px]:mt-20 max-[1256px]:right-0 max-[1256px]:top-0 max-[1256px]:relative max-[550px]:scale-[80%] max-[430px]:scale-[70%] max-[380px]:scale-[60%]  max-[340px]:scale-[50%]";
 
   const registerSubmit = async (values) => {
     if (flag == 1) {
@@ -109,7 +109,7 @@ const Register = () => {
   return (
     <>
       <Loading time={300} />
-      <div className="w-full h-[1200px] bg-[#f5f5f5]">
+      <div className="w-full h-[1200px] bg-[#f5f5f5] dark:bg-[#182239]">
         <Header className="hidden" ml="25px" src="avatar.png" color="#5A0BA9" />
         <div className="w-[1920px] max-[1919px]:w-full  mx-auto h-full relative overflow-hidden flex flex-col justify-start items-center">
           <img
